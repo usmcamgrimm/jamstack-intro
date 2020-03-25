@@ -1,4 +1,4 @@
-requestAnimationFrame('dotenv').config()
+require('dotenv').config()
 
 exports.handler = (event, _context, callback) => {
     const mailgun = require('mailgun-js');
@@ -19,7 +19,7 @@ exports.handler = (event, _context, callback) => {
     mg.messages().send(email, (error, response) => {
         callback(error, {
             statusCode: 200,
-            body: JSON.stringify(response)
+            body: JSON.stringify(response),
         });
     });
 };

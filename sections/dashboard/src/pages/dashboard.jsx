@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Profile from '../components/profile'
 import RouteBase from '../components/route-base'
 import RouteSecret from '../components/route-secret'
+import RouteLogin from '../components/route-login'
 
 const Dashboard = () => {
     return (
@@ -12,6 +13,7 @@ const Dashboard = () => {
             <Router>
                 <RouteBase path="/dashboard/base" />
                 <RouteSecret path="/dashboard/secret" />
+                <RouteLogin path="/dashboard/login" />
             </Router>
             <p>TODO: create a dashboard</p>
         </Layout>

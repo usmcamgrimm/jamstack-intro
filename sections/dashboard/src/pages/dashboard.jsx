@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Router } from '@reach/router'
 import Layout from '../components/layout'
 import Profile from '../components/profile'
 import RouteBase from '../components/route-base'
 import RouteSecret from '../components/route-secret'
 import RouteLogin from '../components/route-login'
+import { navigate } from 'gatsby'
 
-const Dashboard = () => {
+const Dashboard = ({location}) => {
+    useEffect(() => {
+        if (location.pathname.match(/^\/dashboard\/?$/)) {
+            navigate('dashboard/login', {replace: true})
+        }
+    }, []);
+
     return (
         <Layout>
             <Profile />
@@ -15,7 +22,6 @@ const Dashboard = () => {
                 <RouteSecret path="/dashboard/secret" />
                 <RouteLogin path="/dashboard/login" />
             </Router>
-            <p>TODO: create a dashboard</p>
         </Layout>
     );
 };

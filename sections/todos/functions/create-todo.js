@@ -1,7 +1,7 @@
 const sendQuery = require('./utils/send-query');
 
 const CREATE_TODO = `
-    mutation($text: string!) {
+    mutation($text: String!) {
         createTodo(data: {text: $text, completed: false})
         {
             _id

@@ -35,4 +35,4 @@ exports.handler = async event => {
             newTodo: data.createTodo
         })
     };
-}
+};

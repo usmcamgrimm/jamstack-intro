@@ -1,0 +1,22 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gatsby-config.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.20.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

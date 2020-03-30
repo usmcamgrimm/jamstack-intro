@@ -18,3 +18,8 @@
     margin: 0;
     width: 100%;
 }
+
+.text.completed {
+    color: #777;
+    text-decoration: line-through;
+}
